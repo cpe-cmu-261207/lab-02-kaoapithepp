@@ -16,6 +16,7 @@ h2,h3 {
 }
 
 p {
+    text-overflow: clip;
     font-weight: 400;
 }
 
@@ -43,6 +44,7 @@ select:focus {
 
 button {
     margin: 4px;
+    padding: 10px;
     border: none;
     color: white;
     background-color: rgb(153, 180, 255);
@@ -63,12 +65,22 @@ button:focus {
     outline: none;
 }
 
+th {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+td {
+    padding: 10px 20px 0px 20px;
+    text-align: center;
+}
+
 .inputSec {
-    padding: 20px;
+    padding: 10px;
     margin: 20px 50px 20px 50px;
     background-color: rgb(203, 216, 252);
     border-radius: 10px;
-    display: grid;
+    display: flex;
     justify-content: center;
 
 }
@@ -79,7 +91,7 @@ button:focus {
     margin: 20px 50px 20px 50px;
     background-color: rgb(214, 203, 252);
     border-radius: 10px;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -96,4 +108,16 @@ button:focus {
 .gradeInfo {
     display: flex;
     justify-content: block;
+}
+
+.paragraph-styling {
+    display: table;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 845px){
+    .inputSec {
+        display: grid;
+    }
 }

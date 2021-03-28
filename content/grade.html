@@ -13,25 +13,60 @@
             <input type="text" id="subjName" placeholder="Subject Name">
             <p>Subject Code:</p>
             <input type="text" id="subjCode" placeholder="Subject Code">
-            <p>Grade Number:</p>
-            <input type="text" id="gradeNum" placeholder="Grade Number">
+            <p>Grade Letter:</p>
+            <input type="text" id="gradeLet" placeholder="Grade Letter">
             <br>
             <p>Semester:</p>
-            <select name ="semester" id ="semester" itemref="semNum" >
+            <select name ="semester" id ="semesterSel" itemref="semNum" >
                 <optgroup label="Semester">
                     <option value="1" >1</option>
                     <option value="2" >2</option>
                 </optgroup>
             </select>
             <button id="btnAdd">Add</button>
+            <!-- <button id="btnClr" onclick="this.form.reset();">Clear</button> -->
         </div>
         <h2>Subject Added</h2>
         <div class="outputSec">
-            
+            <table id="outputTb">
+                <tr>
+                    <th>
+                        Subject Name
+                    </th>
+                    <th>
+                        Subject Code
+                    </th>
+                    <th>
+                        Grade Letter
+                    </th>
+                    <th>
+                        Semester
+                    </th>
+                </tr>
+            </table>
         </div>
         <h2>Grading</h2>
         <div class="gradeTotal">
-            
+            <table id="outputGd">
+                <tr>
+                    <th>
+                        Total (GPAX)
+                    </th>
+                    <th>
+                        Semester 1 GPA
+                    </th>
+                    <th>
+                        Semester 2 GPA
+                    </th>
+                </tr>
+                <tr>
+                    <td id="GPAX"></td>
+                    <td id="GPAT1"></td>
+                    <td id="GPAT2"></td>
+                </tr>
+            </table>
         </div>
+    
     </body>
+    <script src="../script/app.js"></script>
 </html>
